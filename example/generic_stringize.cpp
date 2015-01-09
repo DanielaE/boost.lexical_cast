@@ -21,6 +21,7 @@
 struct stringize_functor {
 private:
     std::string& result;
+    stringize_functor& operator=(const stringize_functor&);
 
 public:
     explicit stringize_functor(std::string& res)
